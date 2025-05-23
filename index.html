@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Я слежу за тобой (2024)</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .player-container {
+      width: 90vw;
+      max-width: 960px;
+      aspect-ratio: 16 / 9;
+    }
+
+    #player {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="player-container">
+    <div id="player"></div>
+  </div>
+
+  <script src="playerjs.js"></script>
+  <script>
+    new Playerjs({
+      id: "player",
+      file: "https://pixeldrain.com/api/file/NDpheErx?download",
+      poster: "https://i.postimg.cc/XJ3kmQd2/2024.jpg"
+    });
+  </script>
+
+</body>
+</html>
